@@ -27,7 +27,7 @@
       border-radius: 24px;
       border: 1px solid rgba(255, 182, 193, 0.6);
       box-shadow:
-        0 0 30px rgba(233, 30, 99, 0.15),
+        0 0 30px rgba(236, 64, 122, 0.15),
         0 8px 32px rgba(0, 0, 0, 0.08);
       max-width: 420px;
       width: 90%;
@@ -38,7 +38,7 @@
 
     #screen-login .question {
       font-size: 1.15rem;
-      color: #880e4f;
+      color: #ad1457;
       font-style: italic;
       margin-bottom: 28px;
       line-height: 1.5;
@@ -53,19 +53,19 @@
       text-align: center;
       background: rgba(255, 255, 255, 0.85);
       outline: none;
-      color: #880e4f;
+      color: #ad1457;
       margin-bottom: 18px;
       transition: border-color 0.25s, box-shadow 0.25s;
       letter-spacing: 0.1em;
     }
 
     #login-input:focus {
-      border-color: #e91e63;
-      box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.15);
+      border-color: #ec407a;
+      box-shadow: 0 0 0 3px rgba(236, 64, 122, 0.15);
     }
 
     #login-btn {
-      background: linear-gradient(135deg, #e91e63, #ad1457);
+      background: linear-gradient(135deg, #ec407a, #c2185b);
       color: #fff;
       border: none;
       padding: 13px 44px;
@@ -73,13 +73,13 @@
       font-size: 1rem;
       cursor: pointer;
       font-family: inherit;
-      box-shadow: 0 4px 18px rgba(233, 30, 99, 0.4);
+      box-shadow: 0 4px 18px rgba(236, 64, 122, 0.4);
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
     #login-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 7px 22px rgba(233, 30, 99, 0.5);
+      box-shadow: 0 7px 22px rgba(236, 64, 122, 0.5);
     }
 
     #login-btn:active { transform: translateY(0); }
@@ -115,7 +115,7 @@
 
     .envelope-hint {
       margin-top: 18px;
-      color: #880e4f;
+      color: #ad1457;
       font-size: 1rem;
       font-style: italic;
       letter-spacing: 0.04em;
@@ -124,11 +124,11 @@
 
     @keyframes floatGlow {
       0%, 100% {
-        filter: drop-shadow(0 0 12px rgba(233, 30, 99, 0.5));
+        filter: drop-shadow(0 0 12px rgba(236, 64, 122, 0.5));
         transform: translateY(0);
       }
       50% {
-        filter: drop-shadow(0 0 30px rgba(233, 30, 99, 0.85)) drop-shadow(0 0 55px rgba(255, 105, 180, 0.4));
+        filter: drop-shadow(0 0 30px rgba(236, 64, 122, 0.85)) drop-shadow(0 0 55px rgba(255, 105, 180, 0.4));
         transform: translateY(-10px);
       }
     }
@@ -171,19 +171,19 @@
         box-shadow:
           0 0 0 2px rgba(255, 182, 193, 0.5),
           0 0 22px 6px rgba(255, 105, 180, 0.45),
-          0 0 60px 18px rgba(233, 30, 99, 0.15);
+          0 0 60px 18px rgba(236, 64, 122, 0.15);
       }
       50% {
         box-shadow:
           0 0 0 2px rgba(255, 105, 180, 0.9),
-          0 0 40px 12px rgba(233, 30, 99, 0.65),
-          0 0 90px 28px rgba(233, 30, 99, 0.25);
+          0 0 40px 12px rgba(236, 64, 122, 0.65),
+          0 0 90px 28px rgba(236, 64, 122, 0.25);
       }
     }
 
     .letter-title {
       font-size: 1.45rem;
-      color: #c2185b;
+      color: #d81b60;
       font-style: italic;
       letter-spacing: 0.02em;
       margin-bottom: 36px;
@@ -205,7 +205,7 @@
       border: 4px solid #f48fb1;
       box-shadow:
         0 0 0 4px rgba(255, 182, 193, 0.5),
-        0 0 20px rgba(233, 30, 99, 0.35);
+        0 0 20px rgba(236, 64, 122, 0.35);
       display: block;
       position: relative;
       z-index: 1;
@@ -252,6 +252,15 @@
       font-family: inherit;
     }
 
+    .letter-date {
+      text-align: right;
+      margin-top: 24px;
+      font-size: 0.88rem;
+      color: #ad1457;
+      font-style: italic;
+      opacity: 0.75;
+    }
+
     /* Shared */
     @keyframes fadeSlideUp {
       from { opacity: 0; transform: translateY(24px); }
@@ -285,6 +294,7 @@
       <img src="assets/photo.jpeg" alt="" class="photo-circle" />
     </div>
     <div class="letter-content" id="letter-content">Dang tai...</div>
+    <div class="letter-date">01.06.2026</div>
   </div>
 </div>
 
